@@ -10,6 +10,10 @@ module DockerRails
       Time.current
     end
 
+    def alpine_release
+      `cat /etc/alpine-release`.chomp
+    end
+
     def ruby_version
       "#{RUBY_VERSION} patchlevel #{RUBY_PATCHLEVEL}"
     end

@@ -10,6 +10,8 @@
             dd.col-md-7= Rails.application.build_time.try(:in_time_zone)
             dt.col-md-5 Environment
             dd.col-md-7= Rails.env
+            dt.col-md-5 Alpine Linux
+            dd.col-md-7= Rails.application.alpine_release
         .col
           dl.row
             dt.col-md-4 Ruby
